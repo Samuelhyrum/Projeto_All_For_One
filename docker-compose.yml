@@ -34,6 +34,8 @@ services:
 
   # Serviço que irá rodar o banco de dados
   db:
+    # Caso esteja utilizando MacOS M1, descomentar a linha abaixo
+    # platform: linux/x86_64
     container_name: all_for_one_db
     image: mysql:5.7
     restart: always
